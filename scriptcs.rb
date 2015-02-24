@@ -5,7 +5,7 @@
 
 class Scriptcs < Formula
 
-    url 'https://github.com/scriptcs/scriptcs.git', :tag => "v0.13.2"
+    url 'https://github.com/scriptcs/scriptcs.git', :tag => "v0.13.3"
     homepage 'https://github.com/scriptcs/scriptcs'
     depends_on "mono" => :recommended
 

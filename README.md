@@ -4,7 +4,7 @@ A [scriptcs](http://scriptcs.net/) formulae for the [Homebrew](http://brew.sh/) 
 
 ## Current Versions
 
-* scriptscs v0.13.2
+* scriptscs v0.13.3, v0.13.2.
 
 ## Installing Homebrew-scriptcs Formulae
 
