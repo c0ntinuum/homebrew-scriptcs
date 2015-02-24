@@ -2,9 +2,10 @@
 
 A [scriptcs](http://scriptcs.net/) formulae for the [Homebrew](http://brew.sh/) package manager based on a [gist](https://gist.github.com/akunzai/bbcac93646ca08bd8569) by [akunzai](https://github.com/akunzai).
 
-## Current Versions
+## Versions
 
-* scriptscs v0.13.3, v0.13.2.
+* v0.13.3
+* v0.13.2
 
 ## Installing Homebrew-scriptcs Formulae
 

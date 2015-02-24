@@ -1,31 +1,26 @@
-# https://github.com/c0ntinuum/homebrew-scriptcs
-# brew install https://raw.github.com/c0ntinuum/homebrew-scriptcs/master/scriptcs.rb
-
-# require 'formula'
+require "formula"
 
 class Scriptcs < Formula
-
-  url 'https://github.com/scriptcs/scriptcs.git', :tag => 'v0.13.3'
-  homepage 'https://github.com/scriptcs/scriptcs'
-  depends_on 'mono' => :recommended
-
-  script 'scriptcs.sh'
-  tests 'tests.csx'
+  homepage "https://github.com/scriptcs/scriptcs"
+  url "https://github.com/scriptcs/scriptcs/archive/v0.13.3.zip"
+  head "https://github.com/scriptcs/scriptcs.git"
+  depends_on "mono" => :recommended
 
   def install
-    system './build.sh'
-    libexec.install Dir['src/ScriptCs/bin/Release/*']
-    (libexec/script).write <<-EOS.undent
+    script_file = "scriptcs.sh"
+    system "./build.sh"
+    libexec.install Dir["src/ScriptCs/bin/Release/*"]
+    (libexec/script_file).write <<-EOS.undent
     #!/usr/bin/env bash
     mono /usr/local/opt/scriptcs/libexec/scriptcs.exe $@
     EOS
-    (libexec/script).chmod 0755
-    bin.install_symlink libexec/script => 'scriptcs'
+    (libexec/script_file).chmod 0755
+    bin.install_symlink libexec/script_file => "scriptcs"
   end
 
   test do
-    (testpath/tests).write('Console.WriteLine("{0}, {1}!", "Hello", "world");')
+    test_file = "tests.csx"
+    (testpath/test_file).write("Console.WriteLine('{0}, {1}!', 'Hello', 'world');")
     assert_equal "OK", `scriptcs #{tests}`.strip
   end
-
 end
