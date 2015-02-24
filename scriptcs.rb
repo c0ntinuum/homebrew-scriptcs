@@ -2,8 +2,7 @@ require "formula"
 
 class Scriptcs < Formula
   homepage "https://github.com/scriptcs/scriptcs"
-  url "https://github.com/scriptcs/scriptcs/archive/v0.13.3.zip"
-  head "https://github.com/scriptcs/scriptcs.git"
+  url "https://github.com/scriptcs/scriptcs.git", :tag => "v0.13.3"
   depends_on "mono" => :recommended
 
   def install
@@ -18,7 +17,7 @@ class Scriptcs < Formula
     bin.install_symlink libexec/script_file => "scriptcs"
   end
 
-  def test
+  test do
     test_file = "tests.csx"
     (testpath/test_file).write('Console.WriteLine("{0}, {1}!", "Hello", "world");')
     assert_equal "OK", `scriptcs #{tests}`.strip
