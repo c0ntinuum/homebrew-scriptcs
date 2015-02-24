@@ -1,11 +1,9 @@
 # Homebrew-scriptcs
 
-A [scriptcs](http://scriptcs.net/) formulae for the [Homebrew](http://brew.sh/) package manager based on a [gist](https://gist.github.com/akunzai/bbcac93646ca08bd8569) by [akunzai](https://github.com/akunzai).
-
-## Versions
-
-* v0.13.3
-* v0.13.2
+A [scriptcs](http://scriptcs.net/)
+v0.13.3 formulae for the [Homebrew](http://brew.sh/)
+package manager based on a [this](https://gist.github.com/akunzai/bbcac93646ca08bd8569)
+gist by [akunzai](https://github.com/akunzai).
 
 ## Installation
 
@@ -21,10 +19,20 @@ brew install https://raw.github.com/c0ntinuum/homebrew-scriptcs/master/scriptcs.
 
 ## Testing
 
-Run `brew test scriptcs`. The output should be:
+Run ```brew test scriptcs```.
+The output should be:
 
 ```
 Testing scriptcs
+```
+
+Run ```scriptcs```,
+type ```Console.WriteLine(Hello, world!");```
+and hit ```ENTER```.
+The output should be:
+
+```
+Hello, world!
 ```
 
 ## Docs
