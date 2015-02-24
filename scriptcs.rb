@@ -22,6 +22,6 @@ class Scriptcs < Formula
   test do
     test_file = "tests.csx"
     (testpath/test_file).write('Console.WriteLine("{0}, {1}!", "Hello", "world");')
-    assert_equal "Hello, world!", `scriptcs #{tests}`.strip
+    assert_equal "Hello, world!", `scriptcs #{test_file}`.strip
   end
 end
