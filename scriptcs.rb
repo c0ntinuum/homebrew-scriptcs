@@ -17,9 +17,11 @@ class Scriptcs < Formula
     bin.install_symlink libexec/script_file => "scriptcs"
   end
 
+  puts "HI IM TOD"
+
   test do
     test_file = "tests.csx"
     (testpath/test_file).write('Console.WriteLine("{0}, {1}!", "Hello", "world");')
-    assert_equal "OK", `scriptcs #{tests}`.strip
+    assert_equal "Hello, world!", `scriptcs #{tests}`.strip
   end
 end
