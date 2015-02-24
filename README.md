@@ -10,14 +10,20 @@ by [akunzai](https://github.com/akunzai).
 [Mono](http://www.mono-project.com/) 3.0.0 (or newer) is a dependency
 so this formula will install that.
 
-Just `brew tap c0ntinuum/homebrew-scriptcs`
-and then `brew install scriptcs` simple.
+Just `brew tap c0ntinuum/homebrew-scriptcs && brew install scriptcs` simples.
 
-
-You can also install directly via a URL:
+You could instead install directly via a URL:
 
 ```
 brew install https://raw.github.com/c0ntinuum/homebrew-scriptcs/master/scriptcs.rb
+```
+
+## Updating & Upgrading
+
+If you have previously installed scriptcs from this forumla simply:
+
+```
+brew update && brew upgrade mono scriptcs
 ```
 
 ## Testing
