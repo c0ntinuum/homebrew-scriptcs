@@ -22,16 +22,16 @@ brew install https://raw.github.com/c0ntinuum/homebrew-scriptcs/master/scriptcs.
 
 ## Testing
 
-Run ```brew test scriptcs``` the output should only be:
+Run ```brew test scriptcs``` and the only output you see should be:
 
 ```
 Testing scriptcs
 ```
 
 Run ```scriptcs```,
-type ```Console.WriteLine("Hello, world!");```
-and hit ```ENTER```
-the output should only be:
+type ```Console.WriteLine("Hello, world!");```,
+hit ```ENTER```
+and the only output you see should be:
 
 ```
 Hello, world!
