@@ -7,7 +7,8 @@ gist by [akunzai](https://github.com/akunzai).
 
 ## Installation
 
-[Mono](http://www.mono-project.com/) is a dependency of scriptcs so you either need to have Mono >= 3.0.0 already installed or you should accept the recommended installation of mono when installing scriptcs.
+[Mono](http://www.mono-project.com/)
+>= 3.0.0 is a dependency of scriptcs so this formula will install the latest mono as well.
 
 Just `brew tap c0ntinuum/homebrew-scriptcs` and then `brew install scriptcs`.
 
@@ -27,7 +28,7 @@ Testing scriptcs
 ```
 
 Run ```scriptcs```,
-type ```Console.WriteLine(Hello, world!");```
+type ```Console.WriteLine("Hello, world!");```
 and hit ```ENTER```.
 The output should be:
 
