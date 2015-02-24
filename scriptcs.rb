@@ -9,20 +9,23 @@ class Scriptcs < Formula
   homepage 'https://github.com/scriptcs/scriptcs'
   depends_on 'mono' => :recommended
 
+  script 'scriptcs.sh'
+  tests 'tests.csx'
+
   def install
     system './build.sh'
     libexec.install Dir['src/ScriptCs/bin/Release/*']
-    (libexec/'scriptcs.sh').write <<-EOS.undent
+    (libexec/script).write <<-EOS.undent
     #!/usr/bin/env bash
     mono /usr/local/opt/scriptcs/libexec/scriptcs.exe $@
     EOS
-    (libexec/'scriptcs.sh').chmod 0755
-    bin.install_symlink libexec/'scriptcs.sh' => 'scriptcs'
+    (libexec/script).chmod 0755
+    bin.install_symlink libexec/script => 'scriptcs'
   end
 
   test do
-    (testpath/'test.csx').write('Console.WriteLine("Hello, world!");')
-    system 'scriptcs text.csx'
+    (testpath/tests).write('Console.WriteLine("{0}, {1}!", "Hello", "world");')
+    assert_equal "OK", `scriptcs #{tests}`.strip
   end
 
 end
