@@ -28,7 +28,7 @@ brew update && brew upgrade mono scriptcs
 
 ## Testing
 
-Run ```brew test scriptcs``` and the only output you see should be:
+Run ```brew test scriptcs``` and you see:
 
 ```
 Testing scriptcs
@@ -37,7 +37,7 @@ Testing scriptcs
 Run ```scriptcs```,
 type ```Console.WriteLine("Hello, world!");```,
 hit ```ENTER```
-and the only output you see should be:
+and you see:
 
 ```
 Hello, world!
