@@ -7,10 +7,12 @@ by [akunzai](https://github.com/akunzai).
 
 ## Installation
 
-[Mono](http://www.mono-project.com/) >= 3.0.0 is a dependency of scriptcs
-so this formula will install the latest mono as well.
+[Mono](http://www.mono-project.com/) 3.0.0 (or newer) is a dependency
+so this formula will install that.
 
-Just `brew tap c0ntinuum/homebrew-scriptcs` and then `brew install scriptcs`.
+Just `brew tap c0ntinuum/homebrew-scriptcs`
+and then `brew install scriptcs` simple.
+
 
 You can also install directly via a URL:
 
