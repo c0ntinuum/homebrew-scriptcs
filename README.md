@@ -1,3 +1,5 @@
+<span style="color: red"><em>DEPRECATED: As of March 23rd 2015 scriptcs is part of "core" Homebrew.</em></span>
+
 # Homebrew-scriptcs
 
 A [scriptcs](http://scriptcs.net/)
